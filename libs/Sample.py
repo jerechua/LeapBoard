@@ -140,3 +140,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+else:
+    raise Exception("Don't use this file. This is just a test file for now.")
