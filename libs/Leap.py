@@ -18,7 +18,7 @@ if version_info >= (2, 6, 0):
             dir_name = "%s/%s" % (dirname(__file__), _platform)
 
             fp, pathname, description = imp.find_module(
-                'LeapPython', [_platform])
+                'LeapPython', [dir_name])
         except ImportError:
             import LeapPython
             return LeapPython
